@@ -1,0 +1,46 @@
+span.toggle {
+    display: inline-block;
+    color: #fff;
+    width: 12px;
+    top: -4px;
+    position: relative;
+}
+  .toggle:not(.active):before {
+      -webkit-transform: rotate(90deg);
+      -moz-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+      -o-transform: rotate(90deg);
+      transform: rotate(90deg);
+  }
+   .toggle:before {
+      position: absolute;
+      content: '';
+      top: 0;
+      bottom: 0;
+      right: 0;
+      margin: auto;
+      width: 22px;
+      width: 12px;
+      height: 2px;
+      background-color: {{section.settings.btn_text_color}};
+      -webkit-transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      transition: all 0.3s ease;
+  }
+  .toggle:after {
+      position: absolute;
+      content: '';
+      top: 0;
+      bottom: 0;
+      right: 0;
+      margin: auto;
+      width: 22px;
+      width: 12px;
+      height: 2px;
+      background-color: {{section.settings.btn_text_color}};
+      -webkit-transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      transition: all 0.3s ease;
+  }
